@@ -1,0 +1,1 @@
+A simple NEST JS app with a simple authentication ans simple testing with Pactum. 
