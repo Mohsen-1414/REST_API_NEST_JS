@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:13
+    container_name: REST_APP_DB
+    environment:
+      POSTGRES_USER: Admin
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: postdb
+    ports:
+      - "5454:5432"
+  test-db:
+    image: postgres:13
+    container_name: TEST_REST_APP_DB
+    environment:
+      POSTGRES_USER: Admin
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: postdb
+    ports:
+      - "5445:5432"
+
